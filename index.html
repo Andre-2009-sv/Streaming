@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streaming</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form class="netflix">
         <h3>Cadastro</h3>
-        <input type="text" placeholder="login" id="login">
-        <input type="password" placeholder="senha" id="senha">
-        <input type="email" placeholder="email" id="email">
-        <input type="number phone" placeholder="número de telefone" id="número de telefone">
-        <input type="submit" onclick="logar"(); return false>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="email" placeholder="Email" id="email">
+        <input type="number phone" placeholder="Número de telefone" id="telefone">
+        <input type="submit" onclick="logar(); return false">
     </form>
     <script>
         function logar(){
-            var login=document.getElementById('login').value;
-            var senha=document.getElementById('senha').value;
-            if(login=="admin" && senha=="admin") {alert('sucesso');
-                location.href="home.html";
-            } else{
-                alert('usuario ou senha incorretos');
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            var email = document.getElementById('email').value;
+            var telefone = document.getElementById('telefone').value;
+            if(login == "admin" && senha == "admin" && email == "admin@gmail.com" && telefone == "123 456 789"){
+                alert('Sucesso');
+                location.href = "home.html";
+            }else{
+                alert('Usuário ou senha incorretos');
             }
         }
     </script>
