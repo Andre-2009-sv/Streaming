@@ -1,4 +1,10 @@
 .netflix {
+    background-color: blue;
+    font-size: 50px;
+    height: 400px;
+    width: 400px;
     position: center;
-    color:brown;
+}
+.login {
+    color: red;
 }
