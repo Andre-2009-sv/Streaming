@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.categoria {
+    margin-bottom: 60px;
+}
+
+.categoria-titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:rgb(255, 0, 13);
+}
+
+.container-filmes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.filme {
+    background-color:rgb(43, 41, 80);
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.filme img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.filme h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}

@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming</title>
+    <title>Mayor Movies - Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="netflix">  
+    <div class="formulario">  
     <form>
         <h3>Cadastro</h3>
         <input type="text" placeholder="Login" id="login" class="login">
         <input type="password" placeholder="Senha" id="senha">
         <input type="email" placeholder="Email" id="email">
-        <input type="number phone" placeholder="Número de telefone" id="telefone">
+        <input type="tel" placeholder="Número de telefone" id="telefone">
         <input type="submit" onclick="logar(); return false">
     </form>
     </div>
@@ -27,7 +27,7 @@
                 alert('Sucesso');
                 location.href = "home.html";
             }else{
-                alert('Usuário ou senha incorretos');
+                alert('Usuário ou senha incorretos. Tente novamente.');
             }
         }
     </script>
